@@ -1,0 +1,283 @@
+/* Header section */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+ margin: auto;
+
+}
+
+header div {
+  margin-top: 0.5rem;
+ 
+}
+
+header .WLogo{
+  width: 12%;
+  height: 12%;
+}
+
+header div a {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.625rem 1.25rem;
+  border: none;
+  border-radius: 0.313rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+header div a:nth-child(1) {
+  margin-right: 0.25rem;
+}
+
+/* Navigation section */
+nav {
+  margin: 1.25rem;
+  padding: 1.25rem;
+  border: 0.063rem solid #ccc;
+  border-radius: 0.313rem;
+}
+
+.search {
+  margin: 1.25rem;
+  padding: 1.25rem;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.8rem;
+  text-decoration: none;
+  color: black;
+  font-size: 0.9rem;  
+}
+
+nav a:hover {
+  color: rgb(134, 133, 133);
+}
+
+/* Search bar section */
+
+input[type="text"]
+       {
+        display: block;
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+      }
+      button[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+/* Footer section */
+footer {
+  width: 100%;
+  border-top: solid lightslategrey 1px;
+  background-color: lightslategray;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+footer a {
+  display: inline-block;
+  padding: 1%;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 0.8rem;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Card section */
+main{
+  margin-left: 1rem;
+}
+.Cards {
+  display: inline-flex;
+  margin: auto;
+  padding-right: 1.7rem;
+}
+
+.QCard {
+  display: inline-block;
+  width: 350px;
+  height: 350px;
+  margin: 2rem 3% 0;
+  padding: 1rem;
+  border: solid gray 2px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px black;
+  text-align: center;
+}
+
+.QCard img {
+  width: 60%;
+  height: auto;
+}
+
+.QCard p {
+  font-size: 0.75rem;
+  padding: 0.5rem;
+}
+
+.QCard hr {
+  margin: 0 3px;
+  color: darkgray;
+}
+
+.QCard p, h4 {
+  padding-left: 0.5rem;
+  text-align: left;
+}
+
+.QCard a {
+  display: inline-block;
+  padding: 0.5rem;
+  text-decoration: none;
+  border: solid silver 1px;
+  border-radius: 7px;
+  background-color: darkgray;
+  color: white;
+  font-size: 0.8rem;
+}
+
+
+/* Media queries */
+@media only screen and (max-width: 767px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  
+  header div {
+    margin-top: 0.5rem;
+  }
+  
+  nav {
+    margin: 0.5rem 1%;
+    padding-left: 0.9rem;
+  }
+  
+  nav div {
+    margin: 1rem 0 0;
+    display: block;
+    margin-left: 0.5;
+    padding-left: 0.8rem;
+  }
+  
+  .Cards {
+    margin: 1rem 1rem 0.5rem 0;
+    display: block;
+  }
+  
+  .QCard {
+    width: 100%;
+    margin: 2rem 0 0;
+    height: auto;
+  }
+  
+  .QCard img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    padding: 0.5rem;
+  }
+
+  header div {
+    margin-top: 1rem;
+
+  }
+  
+  nav {
+    margin: 0.5rem 2%;
+    padding-left: 1rem;
+  }
+  
+  nav div {
+    margin-left: 10%;
+  }
+  
+  .Cards {
+    margin: 1rem 1rem 0  ;
+    width: 39%;
+    height: auto;
+    padding-left: 1rem;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .Cards {
+    margin: 1rem 1rem 0;
+    width: 27%;
+    
+    
+  }
+  
+  .QCard {
+    width: 100%;
+    margin: 2rem 0 0;
+    height: auto;
+  }
+  
+  .QCard img {
+    width: 100%;
+  }
+}
+
+.notLoginMain{
+  min-height: 500px;
+  padding-left: 30px;
+}
+
+.cardB{
+  background-color: #4CAF50;
+}
+
+.profileMain{
+  display: flex;
+  padding-left:30px;
+  border: 0.063rem solid #ccc;
+  border-radius: 0.313rem;
+  margin: 20px 20px 20px 5px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.Bdiv{
+  flex: 1;
+}
+.editProB{
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color:cadetblue;
+  color: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.editProB:hover {
+  background-color:darkcyan;
+}
+
+.Tdiv{
+  flex: 2;
+}
